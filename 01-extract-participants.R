@@ -243,7 +243,8 @@ if(Sys.getenv("LIST_TYPE") == "Provisional") {
     txt_path = Sys.getenv("TXT_PATH"),
     s3_path  = Sys.getenv("S3_PATH"),
     entity_recognizer_arn  = Sys.getenv("ENTITY_RECOGNIZER_ARN"),
-    data_access_role_arn = Sys.getenv("DATA_ACCESS_ROLE_ARN"))
+    data_access_role_arn = Sys.getenv("DATA_ACCESS_ROLE_ARN"),
+    titles = titles)
   
 } else {
   stop("Please set the `LIST_TYPE` environment variable to either \"Provisional\" or \"Final\".")
